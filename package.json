@@ -1,0 +1,15 @@
+{
+  "name": "host",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testF.js",
+  "scripts": {
+    "start": "node testF.js"
+  },
+  "author": "",
+  "license": "ISC" ,
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "2.0"
+  }
+}
