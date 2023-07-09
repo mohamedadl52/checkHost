@@ -55,8 +55,7 @@ app.get("/", async (req, res) => {
                       rest + '  ' + '('+ nuum++ +')'
 
                       )
-                      fs.appendFile(
-                        Date.now()+"vaildhost.txt",
+                      fs.appendFile("vaildhost.txt",
                         "http://" + element + ' \n'
                         ,
                         function (err) {
