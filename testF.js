@@ -9,7 +9,7 @@ app.get("/", async (req, res) => {
   const str = fs.readFileSync("allhosts.txt")
   const testst = str.toString().replaceAll("https://", "");
   const testtt = testst.replaceAll("http://", "");
-  const testttt = testtt.replaceAll("www.", "").replaceAll('"', '').replaceAll('*.','').replaceAll(';','').replaceAll('\n' , '')
+  const testttt = testtt.replaceAll("www.", "").replaceAll('"', '').replaceAll('*.','').replaceAll(';','').replaceAll('\n' , ' ')
   const arr = testttt.split(" ");
   const SetA = new Set(arr);
   const lastArray = [...SetA].filter(x=>{
